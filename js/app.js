@@ -87,18 +87,14 @@ renderData();
 // event lsitners functions
 const handleSubmission = function (event) {
   event.preventDefault();
-  // console.log(event.target);
   let flowerName = event.target.name.value;
   let flowerType = event.target.type.value;
   let flowerSeason = event.target.season.value;
-
-  // console.log(flowerName, flowerType, flowerSeason);
 
   let flower = new Flower(flowerName, flowerType, flowerSeason);
   flower.addToLocalStorage();
   renderData();
   from.reset();
-  console.log(Flower.all);
 };
 
 const handleRemove = function (event) {
@@ -108,7 +104,6 @@ const handleRemove = function (event) {
     localStorage.setItem('flower', JSON.stringify(Flower.all));
     Flower.all = JSON.parse(localStorage.getItem('flower'));
     renderData();
-    console.log(Flower.all);
   }
 };
 
