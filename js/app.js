@@ -7,7 +7,7 @@ const table = document.getElementById('table');
 const Flower = function (name, imageName, season) {
   this.name = name;
   this.imageName = imageName;
-  this.path = `../assets/${imageName.toLowerCase()}.jpeg`;
+  this.path = `./assets/${imageName.toLowerCase()}.jpeg`;
   this.season = season;
   Flower.all.push(this);
 };
