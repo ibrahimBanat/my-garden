@@ -42,6 +42,7 @@ main {
   width: 25%;
   float: left;
   margin: 0px 40px;
+  font-family: 'Roboto', sans-serif;
 }
 
 fieldset {
@@ -100,4 +101,13 @@ tbody tr span {
 
 tbody tr span:hover {
   cursor: pointer;
+}
+
+#save {
+  background: #609c4d;
+  padding: 5px;
+  margin: 5px 0px;
+  border: none;
+  color: #fff;
+  width: 60px;
 }
