@@ -3,6 +3,7 @@
 // getting DOM elemetnts
 const from = document.getElementById('form');
 const table = document.getElementById('table');
+const removeLs = document.getElementById('clear');
 
 const Flower = function (name, imageName, season) {
   this.name = name;
@@ -111,6 +112,13 @@ const handleRemove = function (event) {
   }
 };
 
+const handleRemoveLs = function () {
+  localStorage.removeItem('flower');
+  Flower.all = [];
+  renderData();
+};
+
 // event listner
 from.addEventListener('submit', handleSubmission);
 table.addEventListener('click', handleRemove);
+removeLs.addEventListener('click', handleRemoveLs);

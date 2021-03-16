@@ -111,3 +111,13 @@ tbody tr span:hover {
   color: #fff;
   width: 60px;
 }
+
+#clear {
+  background: #ac0d0d;
+  /* width: 80px; */
+  padding: 5px;
+  margin: 5px 0px;
+  border: none;
+  color: #fff;
+  /* width: 60px; */
+}
